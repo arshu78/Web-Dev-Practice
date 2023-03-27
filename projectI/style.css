@@ -1,0 +1,152 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* font-family: 'Marvel', sans-serif; */
+font-family: 'Roboto Slab', serif;}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(24, 22, 22) 0%, rgba(116, 110, 110, 0.93) 58%, rgba(51, 49, 49, 0.802) 100%);
+    background-size: 100% 100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all .3s linear;
+
+}
+.box{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px rgb(112, 110, 110);
+    position: relative;
+    background: rgb(0,0,0);
+    transition: all .2s linear;
+    margin-left: 140px;
+    display: flex;
+    justify-content: center;
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(139,10,10,0.9304096638655462) 58%, rgba(185,11,29,0.8015581232492998) 100%);
+}
+.content{
+    width: 170px;
+    padding: 20px;
+    position: absolute;
+   top: 0%;
+   left: 0%;
+    
+
+}
+.img_src img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    top: 50;
+   padding: 25px;
+   transition: all .3s linear;
+    
+}
+
+.content h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(243, 182, 13);
+    padding: 7px;
+    transition: all .2s linear;
+}
+.content p{
+    text-transform: uppercase;
+    font-size: 8px;
+    padding: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: all .3s linear;
+    margin-bottom: 10px;
+}
+.content a{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: 2px;
+    background-color:#000;
+    color: rgb(243, 182, 13);
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 20px;
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+.box:hover .img_src img{
+    transform: scale(1.4);
+    left: 50%;
+    top: 20%;
+    filter: drop-shadow(2px 4px 10px rgb(255, 0, 0));
+}
+
+.box:hover{
+    box-shadow:2px 4px 10px rgb(255, 0, 0); 
+}
+.box:hover h2{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+.box:hover p{
+    opacity: 1;
+}
+.box:hover a{
+    opacity: 1;
+}
+.img_src_cap img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 14%;
+    top: 58;
+   padding: 25px;
+   transition: all .3s linear;
+}
+.img_src_hulk img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 50;
+   padding: 35px;
+   transition: all .3s linear;
+}
+.box:hover .img_src_cap img{
+    transform: scale(1.3);
+    left: 40%;
+    top:10%;
+    filter: drop-shadow(2px 4px 10px blue) ;
+}
+.box:hover .img_src_hulk img{
+    transform: scale(1.3);
+    left: 40%;
+    top:10%;
+    filter: drop-shadow(2px 4px 10px green);
+}
+
+.cap{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(52, 80, 206, 0.93) 58%, rgba(3, 29, 77, 0.802) 100%);
+}
+.hulk{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(52, 206, 65, 0.93) 58%, rgba(30, 77, 3, 0.802) 100%);
+}
+
+.cap:hover{
+    box-shadow:2px 4px 10px rgb(0, 0,255); 
+}
+.hulk:hover{
+    box-shadow:2px 4px 10px rgb(0, 255,0); 
+}
+.box:hover{
+    transform: scale(1.1);
+}
