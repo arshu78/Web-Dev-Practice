@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(campus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo img{
+    width: 120px;
+    height: 120px;
+    
+}
+.logo{
+    width: 30%;
+    padding-left: 150px;
+    height: 80px;
+}
+.elements{
+    width: 60%;
+   
+}
+.elements ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+.elements ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: azure;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+.elements ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: crimson;
+    display: block;
+    margin: auto;
+    transition: .5s;
+    overflow: hidden;
+}
+.elements ul li:hover::after{
+    width: 100%;
+}
+.cen{
+    width: 900px;
+    
+    left: 50%;
+    top: 40%;
+    position: relative;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.cen h1{
+    font-size: 45px;
+    letter-spacing: 2px;
+    line-height: 80px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    color: white;
+    
+
+}
+.cen p{
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 10px 0 60px;
+    line-height: 20px;
+}
+.btn a{
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    padding: 12px 34px;
+    background: transparent;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: .5s;
+    box-shadow: 0px 4px 10px 2px rgb(112, 110, 110);
+    
+}
+.btn a:hover{
+    background: #f44336;
+    transform: scale(1.1);
+}
+.services{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    place-items: center;
+   background: #fff;
+}
+.services-box{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.box{
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 5px 15px 5px rgb(0,0,0);
+    transition: .5s;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.services h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(0,0,0);
+    padding: 20px;
+    transition: .5s;
+}
+.box h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 20px;
+    margin-top: 20px;
+    transition: .5s;
+    text-align: center;
+    padding: 0 20px;
+}
+.box p{
+    font-size: 12px;
+    text-transform: capitalize;
+    padding: 20px;
+    text-align: center;
+    transition: .5s;
+}
+.png{
+    position:relative;
+    background:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    border-radius: 10px;
+}
+.png img{
+    position: absolute;
+    width: 120px;
+    transition: .5s;
+}
+.con{
+transform: translateY(-20px);
+opacity: 0;
+transition: .5s;
+}
+.box:hover .png{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-top: 40px;
+    background: transparent;
+    transition: .5s;
+}
+.box:hover .png img{
+    width: 70px;
+    height: 70px;
+    transition: .5s;
+}
+.box:hover .con{
+    opacity: 1;
+    transition: .5s;
+}
+.box:hover{
+    transform: scale(1.1);
+}
